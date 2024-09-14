@@ -4,10 +4,12 @@
 
 .toggleMenu {
 	right: 0%;
+	transform: scale(1);
 }
 
 .toggleBtn {
 	background-color: #f7f7f7;
 	color: #0147ff;
+	/* color: #282828; */
 	border: 1px solid #282828;
 }

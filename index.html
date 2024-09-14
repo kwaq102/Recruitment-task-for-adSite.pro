@@ -10,6 +10,11 @@
 			href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
 			rel="stylesheet"
 		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+			rel="stylesheet"
+		/>
+
 		<link rel="stylesheet" href="./css/style.css" />
 		<script
 			type="module"
@@ -20,41 +25,77 @@
 			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
 		></script>
 	</head>
-	<body>
-		<header
-			class="min-h-screen container max-w-[1440px] p-4 mx-auto bg-hero bg-top md:bg-right-top bg-no-repeat"
-		>
-			<nav class="flex items-center justify-between">
-				<div class="logo w-32 md:w-auto">
-					<img src="./src/images/logo.png" alt="Logo CarsSpot" />
-				</div>
+	<body class="overflow-x-hidden">
+		<div class="container max-w-[1440px] mx-auto text-textColor">
+			<header
+				class="min-h-[100vh] p-4 bg-hero bg-top md:bg-right-top bg-no-repeat"
+			>
+				<nav class="flex items-center justify-between">
+					<div class="logo w-32 md:w-auto">
+						<img src="./src/images/logo.png" alt="Logo CarsSpot" />
+					</div>
 
-				<div
-					class="nav-items md:static absolute h-[100vh] md:h-auto right-[-80%] top-[0%] duration-500 w-3/5 md:block bg-mainBlue md:bg-transparent"
-				>
-					<ul
-						class="flex flex-col md:flex-row justify-center items-center pt-40 md:pt-0 gap-6 text-[#F7F7F7] md:text-[#282828]"
+					<div
+						class="nav-items md:static absolute h-[100vh] md:h-auto right-[-80%] top-[0%] duration-500 w-3/5 md:block bg-mainBlue rounded-l-xl md:bg-transparent scale-0 z-10"
 					>
-						<liv><a href="#">Galeria zdjęć</a></liv>
-						<liv><a href="#">FaQ</a></liv>
-					</ul>
-				</div>
+						<ul
+							class="flex flex-col md:flex-row justify-center items-center pt-40 md:pt-0 gap-6 text-[#F7F7F7] md:text-textColor"
+						>
+							<liv><a href="#">Galeria zdjęć</a></liv>
+							<liv><a href="#">FaQ</a></liv>
+						</ul>
+					</div>
 
-				<div
-					class="buttons-wrapper relative z-10 md:static flex items-center gap-2 md:gap-6"
-				>
-					<button
-						class="navBtn py-2 px-4 md:py-4 md:px-8 bg-mainBlue text-[#F7F7F7] rounded-lg text-[15px] font-semibold"
+					<div
+						class="buttons-wrapper relative md:static flex items-center gap-2 md:gap-6 z-20"
 					>
-						Zadzwoń do nas
-					</button>
-					<ion-icon
-						name="menu"
-						class="menu-burger text-4xl cursor-pointer md:hidden"
-					></ion-icon>
+						<button
+							class="navBtn py-2 px-4 md:py-4 md:px-8 bg-mainBlue hover:bg-transparent hover:text-mainBlue text-[#F7F7F7] border border-mainBlue rounded-lg text-[15px] font-semibold"
+						>
+							Zadzwoń do nas
+						</button>
+						<ion-icon
+							name="menu"
+							class="menu-burger text-4xl cursor-pointer md:hidden"
+						></ion-icon>
+					</div>
+				</nav>
+
+				<div class="header-wrapper-content">
+					<div
+						class="header-content min-h-[90vh] flex flex-col gap-10 md:gap-12 mt-14 md:mt-20 text-center md:text-start"
+					>
+						<h1
+							class="text-6xl md:text-7xl font-bebasNeue font-normal uppercase tracking-[-4px]"
+						>
+							Sprzedajemy samochody <span class="block">z europy</span>
+						</h1>
+						<p class="">
+							Kup komfortowy pojazd, aby każda podróż
+							<span class="md:block">była wyjątkowym przeżyciem.</span>
+						</p>
+						<div class="flex flex-col md:flex-row gap-2 md:gap-10">
+							<button
+								class="w-full sm:w-auto py-4 px-8 bg-mainBlue hover:bg-transparent hover:text-mainBlue border-mainBlue text-[#F7F7F7] border rounded-lg text-[15px] font-semibold"
+							>
+								Zobacz zdjęcia
+							</button>
+							<button
+								class="w-full sm:w-auto py-4 px-8 bg-transparent border border-mainBlue text-mainBlue hover:bg-mainBlue hover:text-[#F7F7F7] rounded-lg text-[15px] font-semibold"
+							>
+								Zadzwoń do nas
+							</button>
+						</div>
+						<div
+							class="header-cars-img relative lg:absolute bottom-0 md:bottom-auto md:top-2/4 right-[-10px] md:right-0"
+						>
+							<img src="./src/images/Hero.png" alt="" />
+						</div>
+					</div>
 				</div>
-			</nav>
-		</header>
+			</header>
+			<main class="min-h-screen">ss</main>
+		</div>
 		<script src="./src/js/index.js"></script>
 	</body>
 </html>
