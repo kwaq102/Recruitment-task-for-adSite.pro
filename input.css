@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.toggleMenu {
+	right: 0%;
+}
+
+.toggleBtn {
+	background-color: #f7f7f7;
+	color: #0147ff;
+	border: 1px solid #282828;
+}
