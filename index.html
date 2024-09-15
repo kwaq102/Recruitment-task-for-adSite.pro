@@ -7,6 +7,10 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<link
 			href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
 			rel="stylesheet"
 		/>
@@ -16,6 +20,22 @@
 		/>
 
 		<link rel="stylesheet" href="./css/style.css" />
+		<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+			integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+			integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
 		<script
 			type="module"
 			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
@@ -23,6 +43,12 @@
 		<script
 			nomodule
 			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+			integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
 		></script>
 	</head>
 	<body class="overflow-x-hidden">
@@ -89,12 +115,50 @@
 						<div
 							class="header-cars-img relative lg:absolute bottom-0 md:bottom-auto md:top-2/4 right-[-10px] md:right-0"
 						>
-							<img src="./src/images/Hero.png" alt="" />
+							<img src="./src/images/Hero.png" alt="Samochody" />
 						</div>
 					</div>
 				</div>
 			</header>
-			<main class="min-h-screen">ss</main>
+			<main class="p-4">
+				<section class="gallery">
+					<header class="md:pt-10">
+						<h2 class="text-[21.5px] font-robotoCondense text-mainBlue">
+							Prezentacja firmy
+						</h2>
+						<h3
+							class="mb-4 text-3xl md:text-[40px] font-bebasNeue uppercase text-[#1D1D1B]"
+						>
+							Zobacz naszą galerię zdjęć
+						</h3>
+						<div
+							class="kind-cars-wrapper flex gap-[48px] font-roboto font-semibold text-[15px]"
+						>
+							<button
+								class="hover:text-mainBlue activeBtnGallery"
+								data-tab-target="#tab1"
+							>
+								Samochody osobowe
+							</button>
+							<button
+								href="#"
+								class="hover:text-mainBlue"
+								data-tab-target="#tab2"
+							>
+								Samochody dostawcze
+							</button>
+						</div>
+					</header>
+					<div class="responsive py-20">
+						<img class="car-img" src="./src/images/Images.png" alt="car" />
+						<img class="car-img" src="./src/images/Images (1).png" alt="car" />
+						<img class="car-img" src="./src/images/Images (2).png" alt="car" />
+						<img class="car-img" src="./src/images/Images.png" alt="car" />
+						<img class="car-img" src="./src/images/Images (2).png" alt="car" />
+						<img class="car-img" src="./src/images/Images.png" alt="car" />
+					</div>
+				</section>
+			</main>
 		</div>
 		<script src="./src/js/index.js"></script>
 	</body>

@@ -10,6 +10,37 @@
 .toggleBtn {
 	background-color: #f7f7f7;
 	color: #0147ff;
-	/* color: #282828; */
 	border: 1px solid #282828;
+}
+
+.activeBtnGallery {
+	color: #0147ff;
+	text-decoration: underline;
+}
+
+.slick-dots {
+	bottom: 25px !important;
+}
+
+.slick-dots li {
+	width: 15px !important;
+	height: 15px !important;
+	margin: 0 !important;
+}
+
+.slick-dots li button:before {
+	font-size: 8px !important;
+	color: #f1f1f1 !important;
+	opacity: 1 !important;
+}
+
+.slick-dots li.slick-active button:before {
+	color: #0147ff !important;
+}
+
+@media (min-width: 768px) {
+	.car-img {
+		width: 90% !important;
+		max-width: 600px !important;
+	}
 }

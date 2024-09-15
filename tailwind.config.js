@@ -14,6 +14,7 @@ module.exports = {
 			},
 			fontFamily: {
 				roboto: ["Roboto Flex", "sans-serif"],
+				robotoCondense: ["Roboto+Condense", "sans-serif"],
 				bebasNeue: ["Bebas Neue", "sans-serif"],
 			},
 		},
