@@ -8,7 +8,8 @@ module.exports = {
 			},
 			colors: {
 				mainBlue: "#0147FF",
-				textColor: "#282828",
+				darkColor: "#282828",
+				lightColor: "#F7F7F7",
 			},
 			fontFamily: {
 				roboto: ["Roboto Flex", "sans-serif"],

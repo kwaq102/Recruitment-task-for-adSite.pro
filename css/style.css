@@ -671,10 +671,6 @@ video {
   width: 100vw;
 }
 
-.w-10 {
-  width: 2.5rem;
-}
-
 .max-w-\[1440px\] {
   max-width: 1440px;
 }
@@ -693,20 +689,8 @@ video {
   flex-direction: column;
 }
 
-.items-start {
-  align-items: flex-start;
-}
-
-.items-end {
-  align-items: flex-end;
-}
-
 .items-center {
   align-items: center;
-}
-
-.items-stretch {
-  align-items: stretch;
 }
 
 .justify-center {
@@ -717,8 +701,16 @@ video {
   justify-content: space-between;
 }
 
+.gap-1 {
+  gap: 0.25rem;
+}
+
 .gap-10 {
   gap: 2.5rem;
+}
+
+.gap-12 {
+  gap: 3rem;
 }
 
 .gap-2 {
@@ -731,18 +723,6 @@ video {
 
 .gap-\[48px\] {
   gap: 48px;
-}
-
-.gap-3 {
-  gap: 0.75rem;
-}
-
-.gap-1 {
-  gap: 0.25rem;
-}
-
-.gap-12 {
-  gap: 3rem;
 }
 
 .self-start {
@@ -766,10 +746,6 @@ video {
   border-width: 1px;
 }
 
-.border-b {
-  border-bottom-width: 1px;
-}
-
 .border-b-2 {
   border-bottom-width: 2px;
 }
@@ -781,11 +757,6 @@ video {
 .border-mainBlue {
   --tw-border-opacity: 1;
   border-color: rgb(1 71 255 / var(--tw-border-opacity));
-}
-
-.border-\[\#f7f7f7\] {
-  --tw-border-opacity: 1;
-  border-color: rgb(247 247 247 / var(--tw-border-opacity));
 }
 
 .border-white {
@@ -802,7 +773,7 @@ video {
   background-color: transparent;
 }
 
-.bg-textColor {
+.bg-darkColor {
   --tw-bg-opacity: 1;
   background-color: rgb(40 40 40 / var(--tw-bg-opacity));
 }
@@ -833,6 +804,11 @@ video {
   padding-right: 2rem;
 }
 
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -848,31 +824,17 @@ video {
   padding-bottom: 1rem;
 }
 
-.py-10 {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-}
-
-.py-12 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
 
-.pt-40 {
-  padding-top: 10rem;
-}
-
-.pb-1 {
-  padding-bottom: 0.25rem;
-}
-
 .pb-2 {
   padding-bottom: 0.5rem;
+}
+
+.pt-40 {
+  padding-top: 10rem;
 }
 
 .text-center {
@@ -906,6 +868,10 @@ video {
   line-height: 1;
 }
 
+.text-\[14px\] {
+  font-size: 14px;
+}
+
 .text-\[15px\] {
   font-size: 15px;
 }
@@ -918,8 +884,8 @@ video {
   font-size: 25px;
 }
 
-.text-\[14px\] {
-  font-size: 14px;
+.font-bold {
+  font-weight: 700;
 }
 
 .font-normal {
@@ -928,10 +894,6 @@ video {
 
 .font-semibold {
   font-weight: 600;
-}
-
-.font-bold {
-  font-weight: 700;
 }
 
 .uppercase {
@@ -947,7 +909,7 @@ video {
   color: rgb(29 29 27 / var(--tw-text-opacity));
 }
 
-.text-\[\#F7F7F7\] {
+.text-lightColor {
   --tw-text-opacity: 1;
   color: rgb(247 247 247 / var(--tw-text-opacity));
 }
@@ -957,22 +919,42 @@ video {
   color: rgb(1 71 255 / var(--tw-text-opacity));
 }
 
-.text-textColor {
-  --tw-text-opacity: 1;
-  color: rgb(40 40 40 / var(--tw-text-opacity));
-}
-
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-darkColor {
+  --tw-text-opacity: 1;
+  color: rgb(40 40 40 / var(--tw-text-opacity));
 }
 
 .underline {
   text-decoration-line: underline;
 }
 
+.transition-colors {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .duration-500 {
   transition-duration: 500ms;
+}
+
+.duration-200 {
+  transition-duration: 200ms;
+}
+
+.duration-100 {
+  transition-duration: 100ms;
 }
 
 .toggleMenu {
@@ -1027,7 +1009,7 @@ video {
   background-color: transparent;
 }
 
-.hover\:text-\[\#F7F7F7\]:hover {
+.hover\:text-lightColor:hover {
   --tw-text-opacity: 1;
   color: rgb(247 247 247 / var(--tw-text-opacity));
 }
@@ -1076,20 +1058,12 @@ video {
     height: auto;
   }
 
-  .md\:w-auto {
-    width: auto;
-  }
-
-  .md\:w-1\/2 {
-    width: 50%;
-  }
-
-  .md\:w-2\/5 {
-    width: 40%;
-  }
-
   .md\:w-2\/4 {
     width: 50%;
+  }
+
+  .md\:w-auto {
+    width: auto;
   }
 
   .md\:flex-row {
@@ -1151,7 +1125,7 @@ video {
     font-size: 40px;
   }
 
-  .md\:text-textColor {
+  .md\:text-darkColor {
     --tw-text-opacity: 1;
     color: rgb(40 40 40 / var(--tw-text-opacity));
   }
