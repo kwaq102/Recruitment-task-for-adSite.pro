@@ -51,115 +51,162 @@
 			referrerpolicy="no-referrer"
 		></script>
 	</head>
-	<body class="overflow-x-hidden">
-		<div class="container max-w-[1440px] mx-auto text-textColor">
-			<header
-				class="min-h-[100vh] p-4 bg-hero bg-top md:bg-right-top bg-no-repeat"
-			>
-				<nav class="flex items-center justify-between">
-					<div class="logo w-32 md:w-auto">
-						<img src="./src/images/logo.png" alt="Logo CarsSpot" />
-					</div>
+	<body class="overflow-x-hidden text-textColor">
+		<header
+			class="container max-w-[1440px] mx-auto min-h-[100vh] p-4 bg-hero bg-top md:bg-right-top bg-no-repeat"
+		>
+			<nav class="flex items-center justify-between">
+				<div class="logo w-32 md:w-auto">
+					<img src="./src/images/logo.png" alt="Logo CarsSpot" />
+				</div>
 
-					<div
-						class="nav-items md:static absolute h-[100vh] md:h-auto right-[-80%] top-[0%] duration-500 w-3/5 md:block bg-mainBlue rounded-l-xl md:bg-transparent scale-0 z-10"
+				<div
+					class="nav-items md:static absolute h-[100vh] md:h-auto right-[-80%] top-[0%] duration-500 w-3/5 md:block bg-mainBlue rounded-l-xl md:bg-transparent scale-0 z-10"
+				>
+					<ul
+						class="flex flex-col md:flex-row justify-center items-center pt-40 md:pt-0 gap-6 text-[#F7F7F7] md:text-textColor"
 					>
-						<ul
-							class="flex flex-col md:flex-row justify-center items-center pt-40 md:pt-0 gap-6 text-[#F7F7F7] md:text-textColor"
-						>
-							<liv><a href="#">Galeria zdjęć</a></liv>
-							<liv><a href="#">FaQ</a></liv>
-						</ul>
-					</div>
+						<liv><a href="#">Galeria zdjęć</a></liv>
+						<liv><a href="#">FaQ</a></liv>
+					</ul>
+				</div>
 
-					<div
-						class="buttons-wrapper relative md:static flex items-center gap-2 md:gap-6 z-20"
+				<div
+					class="buttons-wrapper relative md:static flex items-center gap-2 md:gap-6 z-20"
+				>
+					<button
+						class="navBtn py-2 px-4 md:py-4 md:px-8 bg-mainBlue hover:bg-transparent hover:text-mainBlue text-[#F7F7F7] border border-mainBlue rounded-lg text-[15px] font-semibold"
 					>
+						Zadzwoń do nas
+					</button>
+					<ion-icon
+						name="menu"
+						class="menu-burger text-4xl cursor-pointer md:hidden"
+					></ion-icon>
+				</div>
+			</nav>
+
+			<div class="header-wrapper-content">
+				<div
+					class="header-content min-h-[90vh] flex flex-col gap-10 md:gap-12 mt-14 md:mt-20 text-center md:text-start"
+				>
+					<h1
+						class="text-6xl md:text-7xl font-bebasNeue font-normal uppercase tracking-[-4px]"
+					>
+						Sprzedajemy samochody <span class="block">z europy</span>
+					</h1>
+					<p class="">
+						Kup komfortowy pojazd, aby każda podróż
+						<span class="md:block">była wyjątkowym przeżyciem.</span>
+					</p>
+					<div class="flex flex-col md:flex-row gap-2 md:gap-10">
 						<button
-							class="navBtn py-2 px-4 md:py-4 md:px-8 bg-mainBlue hover:bg-transparent hover:text-mainBlue text-[#F7F7F7] border border-mainBlue rounded-lg text-[15px] font-semibold"
+							class="w-full sm:w-auto py-4 px-8 bg-mainBlue hover:bg-transparent hover:text-mainBlue border-mainBlue text-[#F7F7F7] border rounded-lg text-[15px] font-semibold"
+						>
+							Zobacz zdjęcia
+						</button>
+						<button
+							class="w-full sm:w-auto py-4 px-8 bg-transparent border border-mainBlue text-mainBlue hover:bg-mainBlue hover:text-[#F7F7F7] rounded-lg text-[15px] font-semibold"
 						>
 							Zadzwoń do nas
 						</button>
-						<ion-icon
-							name="menu"
-							class="menu-burger text-4xl cursor-pointer md:hidden"
-						></ion-icon>
 					</div>
-				</nav>
-
-				<div class="header-wrapper-content">
 					<div
-						class="header-content min-h-[90vh] flex flex-col gap-10 md:gap-12 mt-14 md:mt-20 text-center md:text-start"
+						class="header-cars-img relative lg:absolute bottom-0 md:bottom-auto md:top-2/4 right-[-10px] md:right-0"
 					>
-						<h1
-							class="text-6xl md:text-7xl font-bebasNeue font-normal uppercase tracking-[-4px]"
-						>
-							Sprzedajemy samochody <span class="block">z europy</span>
-						</h1>
-						<p class="">
-							Kup komfortowy pojazd, aby każda podróż
-							<span class="md:block">była wyjątkowym przeżyciem.</span>
-						</p>
-						<div class="flex flex-col md:flex-row gap-2 md:gap-10">
-							<button
-								class="w-full sm:w-auto py-4 px-8 bg-mainBlue hover:bg-transparent hover:text-mainBlue border-mainBlue text-[#F7F7F7] border rounded-lg text-[15px] font-semibold"
-							>
-								Zobacz zdjęcia
-							</button>
-							<button
-								class="w-full sm:w-auto py-4 px-8 bg-transparent border border-mainBlue text-mainBlue hover:bg-mainBlue hover:text-[#F7F7F7] rounded-lg text-[15px] font-semibold"
-							>
-								Zadzwoń do nas
-							</button>
-						</div>
-						<div
-							class="header-cars-img relative lg:absolute bottom-0 md:bottom-auto md:top-2/4 right-[-10px] md:right-0"
-						>
-							<img src="./src/images/Hero.png" alt="Samochody" />
-						</div>
+						<img src="./src/images/Hero.png" alt="Samochody" />
 					</div>
 				</div>
-			</header>
-			<main class="p-4">
-				<section class="gallery">
-					<header class="md:pt-10">
-						<h2 class="text-[21.5px] font-robotoCondense text-mainBlue">
-							Prezentacja firmy
-						</h2>
-						<h3
-							class="mb-4 text-3xl md:text-[40px] font-bebasNeue uppercase text-[#1D1D1B]"
+			</div>
+		</header>
+		<main class="">
+			<section class="gallery container max-w-[1440px] mx-auto p-4">
+				<header class="md:pt-10">
+					<h2 class="text-[21.5px] font-robotoCondense text-mainBlue">
+						Prezentacja firmy
+					</h2>
+					<h3
+						class="mb-4 text-3xl md:text-[40px] font-bebasNeue uppercase text-[#1D1D1B]"
+					>
+						Zobacz naszą galerię zdjęć
+					</h3>
+					<div
+						class="kind-cars-wrapper flex gap-[48px] font-roboto font-semibold text-[15px]"
+					>
+						<button
+							class="hover:text-mainBlue activeBtnGallery"
+							data-tab-target="#tab1"
 						>
-							Zobacz naszą galerię zdjęć
-						</h3>
-						<div
-							class="kind-cars-wrapper flex gap-[48px] font-roboto font-semibold text-[15px]"
+							Samochody osobowe
+						</button>
+						<button
+							href="#"
+							class="hover:text-mainBlue"
+							data-tab-target="#tab2"
 						>
-							<button
-								class="hover:text-mainBlue activeBtnGallery"
-								data-tab-target="#tab1"
-							>
-								Samochody osobowe
-							</button>
-							<button
-								href="#"
-								class="hover:text-mainBlue"
-								data-tab-target="#tab2"
-							>
-								Samochody dostawcze
-							</button>
-						</div>
-					</header>
-					<div class="responsive py-20">
-						<img class="car-img" src="./src/images/Images.png" alt="car" />
-						<img class="car-img" src="./src/images/Images (1).png" alt="car" />
-						<img class="car-img" src="./src/images/Images (2).png" alt="car" />
-						<img class="car-img" src="./src/images/Images.png" alt="car" />
-						<img class="car-img" src="./src/images/Images (2).png" alt="car" />
-						<img class="car-img" src="./src/images/Images.png" alt="car" />
+							Samochody dostawcze
+						</button>
 					</div>
-				</section>
-			</main>
-		</div>
+				</header>
+				<div class="responsive py-20">
+					<img class="car-img" src="./src/images/Images.png" alt="car" />
+					<img class="car-img" src="./src/images/Images (1).png" alt="car" />
+					<img class="car-img" src="./src/images/Images (2).png" alt="car" />
+					<img class="car-img" src="./src/images/Images.png" alt="car" />
+					<img class="car-img" src="./src/images/Images (2).png" alt="car" />
+					<img class="car-img" src="./src/images/Images.png" alt="car" />
+				</div>
+			</section>
+
+			<section class="seo w-screen py-12 bg-textColor text-white">
+				<div class="max-w-[1440px] mx-auto flex flex-col md:flex-row gap-12">
+					<div class="md:w-2/4 p-4 md:p-6 flex flex-col gap-6">
+						<h3 class="text-[25px] uppercase font-bebasNeue">
+							Id nostrud enim esse consectetur in eu mollit fugiat aute. Velit
+							nulla commodo.
+						</h3>
+						<p class="text-[14px] font-robotoCondense">
+							Mauris varius ipsum mauris, rutrum lobortis magna efficitur a.
+							Donec egestas, nisl vehicula feugiat ornare, diam turpis efficitur
+							mi, ac venenatis eros ipsum ac arcu. Vestibulum et [...]
+						</p>
+						<button
+							class="flex items-center gap-1 self-start pb-2 border-b-2 border-white text-[14px]"
+						>
+							Rozwiń <ion-icon name="arrow-down-outline"></ion-icon>
+						</button>
+					</div>
+
+					<div class="md:w-2/4 p-4 md:p-6 flex flex-col gap-6">
+						<h3 class="text-[25px] uppercase font-bebasNeue">
+							Id nostrud enim esse consectetur in eu mollit fugiat aute. Velit
+							nulla commodo.
+						</h3>
+						<p class="text-[14px] font-robotoCondense">
+							Mauris varius ipsum mauris, rutrum lobortis magna efficitur a.
+							Donec egestas, nisl vehicula feugiat ornare, diam turpis efficitur
+							mi, ac venenatis eros ipsum ac arcu. Vestibulum et [...]
+						</p>
+						<button
+							class="flex items-center gap-1 self-start pb-2 border-b-2 border-white text-[14px]"
+						>
+							Rozwiń <ion-icon name="arrow-down-outline"></ion-icon>
+						</button>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer
+			class="w-screen py-6 bg-textColor border-t-2 border-white text-white"
+		>
+			<div
+				class="footer-content container max-w-[1440px] mx-auto p-4 flex flex-col md:flex-row justify-between font-robotoCondense"
+			>
+				<p class="font-bold">Cars Spot</p>
+				<a href="#" class="underline">Polityka prywatności</a>
+			</div>
+		</footer>
 		<script src="./src/js/index.js"></script>
 	</body>
 </html>

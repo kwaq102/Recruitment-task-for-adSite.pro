@@ -8,9 +8,7 @@ module.exports = {
 			},
 			colors: {
 				mainBlue: "#0147FF",
-				mainBlueHover: "#1a4bd8",
 				textColor: "#282828",
-				textColorHover: "#282828",
 			},
 			fontFamily: {
 				roboto: ["Roboto Flex", "sans-serif"],
